@@ -15,10 +15,10 @@
 		3DD481C7146A2E9C00907E04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD481C6146A2E9C00907E04 /* AppDelegate.m */; };
 		3DD481CA146A2E9C00907E04 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD481C8146A2E9C00907E04 /* MainStoryboard_iPhone.storyboard */; };
 		3DD481CD146A2E9C00907E04 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD481CB146A2E9C00907E04 /* MainStoryboard_iPad.storyboard */; };
-		3DD481D0146A2E9C00907E04 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD481CF146A2E9C00907E04 /* FirstViewController.m */; };
+		3DD481D0146A2E9C00907E04 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD481CF146A2E9C00907E04 /* MapViewController.m */; };
 		3DD481D2146A2E9C00907E04 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD481D1146A2E9C00907E04 /* first.png */; };
 		3DD481D4146A2E9D00907E04 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD481D3146A2E9D00907E04 /* first@2x.png */; };
-		3DD481D7146A2E9D00907E04 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD481D6146A2E9D00907E04 /* SecondViewController.m */; };
+		3DD481D7146A2E9D00907E04 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD481D6146A2E9D00907E04 /* SearchViewController.m */; };
 		3DD481D9146A2E9D00907E04 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD481D8146A2E9D00907E04 /* second.png */; };
 		3DD481DB146A2E9D00907E04 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD481DA146A2E9D00907E04 /* second@2x.png */; };
 		3DD481E3146A2E9D00907E04 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481E2146A2E9D00907E04 /* SenTestingKit.framework */; };
@@ -26,6 +26,11 @@
 		3DD481E5146A2E9D00907E04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481B8146A2E9C00907E04 /* Foundation.framework */; };
 		3DD481ED146A2E9D00907E04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DD481EB146A2E9D00907E04 /* InfoPlist.strings */; };
 		3DD481F0146A2E9D00907E04 /* CompanyMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD481EF146A2E9D00907E04 /* CompanyMapTests.m */; };
+		3DD481FA146A37CC00907E04 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481F9146A37CC00907E04 /* MapKit.framework */; };
+		3DD481FC146A37E100907E04 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481FB146A37E100907E04 /* CoreLocation.framework */; };
+		3DD48200146A3B5C00907E04 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD481FE146A3B5C00907E04 /* RecordViewController.m */; };
+		3DD4820F146A4B9400907E04 /* Company.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DD4820D146A4B9400907E04 /* Company.xcdatamodeld */; };
+		3DD48212146A608A00907E04 /* CompanyMapDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD48211146A608A00907E04 /* CompanyMapDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,28 +48,35 @@
 		3DD481B6146A2E9C00907E04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DD481B8146A2E9C00907E04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3DD481BA146A2E9C00907E04 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3DD481BE146A2E9C00907E04 /* CompanyMap-Info.plist */ = {isa = PBXFileReference; path = "CompanyMap-Info.plist"; sourceTree = "<group>"; };
+		3DD481BE146A2E9C00907E04 /* CompanyMap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CompanyMap-Info.plist"; sourceTree = "<group>"; };
 		3DD481C0146A2E9C00907E04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3DD481C2146A2E9C00907E04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3DD481C4146A2E9C00907E04 /* CompanyMap-Prefix.pch */ = {isa = PBXFileReference; path = "CompanyMap-Prefix.pch"; sourceTree = "<group>"; };
-		3DD481C5146A2E9C00907E04 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DD481C4146A2E9C00907E04 /* CompanyMap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CompanyMap-Prefix.pch"; sourceTree = "<group>"; };
+		3DD481C5146A2E9C00907E04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DD481C6146A2E9C00907E04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3DD481C9146A2E9C00907E04 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		3DD481CC146A2E9C00907E04 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		3DD481CE146A2E9C00907E04 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
-		3DD481CF146A2E9C00907E04 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		3DD481CE146A2E9C00907E04 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		3DD481CF146A2E9C00907E04 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		3DD481D1146A2E9C00907E04 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		3DD481D3146A2E9D00907E04 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		3DD481D5146A2E9D00907E04 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
-		3DD481D6146A2E9D00907E04 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		3DD481D5146A2E9D00907E04 /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		3DD481D6146A2E9D00907E04 /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		3DD481D8146A2E9D00907E04 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		3DD481DA146A2E9D00907E04 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		3DD481E1146A2E9D00907E04 /* CompanyMapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompanyMapTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD481E2146A2E9D00907E04 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		3DD481EA146A2E9D00907E04 /* CompanyMapTests-Info.plist */ = {isa = PBXFileReference; path = "CompanyMapTests-Info.plist"; sourceTree = "<group>"; };
+		3DD481EA146A2E9D00907E04 /* CompanyMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CompanyMapTests-Info.plist"; sourceTree = "<group>"; };
 		3DD481EC146A2E9D00907E04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3DD481EE146A2E9D00907E04 /* CompanyMapTests.h */ = {isa = PBXFileReference; path = CompanyMapTests.h; sourceTree = "<group>"; };
+		3DD481EE146A2E9D00907E04 /* CompanyMapTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompanyMapTests.h; sourceTree = "<group>"; };
 		3DD481EF146A2E9D00907E04 /* CompanyMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanyMapTests.m; sourceTree = "<group>"; };
+		3DD481F9146A37CC00907E04 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3DD481FB146A37E100907E04 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3DD481FD146A3B5C00907E04 /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		3DD481FE146A3B5C00907E04 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		3DD4820E146A4B9400907E04 /* Company.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Company.xcdatamodel; sourceTree = "<group>"; };
+		3DD48210146A608A00907E04 /* CompanyMapDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyMapDataManager.h; sourceTree = "<group>"; };
+		3DD48211146A608A00907E04 /* CompanyMapDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyMapDataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD481FC146A37E100907E04 /* CoreLocation.framework in Frameworks */,
+				3DD481FA146A37CC00907E04 /* MapKit.framework in Frameworks */,
 				3DD481B7146A2E9C00907E04 /* UIKit.framework in Frameworks */,
 				3DD481B9146A2E9C00907E04 /* Foundation.framework in Frameworks */,
 				3DD481BB146A2E9C00907E04 /* CoreGraphics.framework in Frameworks */,
@@ -113,6 +127,8 @@
 		3DD481B5146A2E9C00907E04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DD481FB146A37E100907E04 /* CoreLocation.framework */,
+				3DD481F9146A37CC00907E04 /* MapKit.framework */,
 				3DD481B6146A2E9C00907E04 /* UIKit.framework */,
 				3DD481B8146A2E9C00907E04 /* Foundation.framework */,
 				3DD481BA146A2E9C00907E04 /* CoreGraphics.framework */,
@@ -128,15 +144,20 @@
 				3DD481C6146A2E9C00907E04 /* AppDelegate.m */,
 				3DD481C8146A2E9C00907E04 /* MainStoryboard_iPhone.storyboard */,
 				3DD481CB146A2E9C00907E04 /* MainStoryboard_iPad.storyboard */,
-				3DD481CE146A2E9C00907E04 /* FirstViewController.h */,
-				3DD481CF146A2E9C00907E04 /* FirstViewController.m */,
+				3DD481CE146A2E9C00907E04 /* MapViewController.h */,
+				3DD481CF146A2E9C00907E04 /* MapViewController.m */,
 				3DD481D1146A2E9C00907E04 /* first.png */,
 				3DD481D3146A2E9D00907E04 /* first@2x.png */,
-				3DD481D5146A2E9D00907E04 /* SecondViewController.h */,
-				3DD481D6146A2E9D00907E04 /* SecondViewController.m */,
+				3DD481D5146A2E9D00907E04 /* SearchViewController.h */,
+				3DD481D6146A2E9D00907E04 /* SearchViewController.m */,
 				3DD481D8146A2E9D00907E04 /* second.png */,
 				3DD481DA146A2E9D00907E04 /* second@2x.png */,
 				3DD481BD146A2E9C00907E04 /* Supporting Files */,
+				3DD481FD146A3B5C00907E04 /* RecordViewController.h */,
+				3DD481FE146A3B5C00907E04 /* RecordViewController.m */,
+				3DD4820D146A4B9400907E04 /* Company.xcdatamodeld */,
+				3DD48210146A608A00907E04 /* CompanyMapDataManager.h */,
+				3DD48211146A608A00907E04 /* CompanyMapDataManager.m */,
 			);
 			path = CompanyMap;
 			sourceTree = "<group>";
@@ -284,8 +305,11 @@
 			files = (
 				3DD481C3146A2E9C00907E04 /* main.m in Sources */,
 				3DD481C7146A2E9C00907E04 /* AppDelegate.m in Sources */,
-				3DD481D0146A2E9C00907E04 /* FirstViewController.m in Sources */,
-				3DD481D7146A2E9D00907E04 /* SecondViewController.m in Sources */,
+				3DD481D0146A2E9C00907E04 /* MapViewController.m in Sources */,
+				3DD481D7146A2E9D00907E04 /* SearchViewController.m in Sources */,
+				3DD48200146A3B5C00907E04 /* RecordViewController.m in Sources */,
+				3DD4820F146A4B9400907E04 /* Company.xcdatamodeld in Sources */,
+				3DD48212146A608A00907E04 /* CompanyMapDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +489,7 @@
 				3DD481F5146A2E9D00907E04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DD481F6146A2E9D00907E04 /* Build configuration list for PBXNativeTarget "CompanyMapTests" */ = {
 			isa = XCConfigurationList;
@@ -473,8 +498,22 @@
 				3DD481F8146A2E9D00907E04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3DD4820D146A4B9400907E04 /* Company.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DD4820E146A4B9400907E04 /* Company.xcdatamodel */,
+			);
+			currentVersion = 3DD4820E146A4B9400907E04 /* Company.xcdatamodel */;
+			path = Company.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3DD481A9146A2E9C00907E04 /* Project object */;
 }
