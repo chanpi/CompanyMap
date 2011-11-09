@@ -31,6 +31,8 @@
 		3DD48200146A3B5C00907E04 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD481FE146A3B5C00907E04 /* RecordViewController.m */; };
 		3DD4820F146A4B9400907E04 /* Company.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DD4820D146A4B9400907E04 /* Company.xcdatamodeld */; };
 		3DD48212146A608A00907E04 /* CompanyMapDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD48211146A608A00907E04 /* CompanyMapDataManager.m */; };
+		3DF1A0A2146A6BFC0070CA74 /* Visit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1A0A1146A6BFC0070CA74 /* Visit.m */; };
+		3DF1A0A5146A6BFD0070CA74 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1A0A4146A6BFD0070CA74 /* Company.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,10 @@
 		3DD4820E146A4B9400907E04 /* Company.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Company.xcdatamodel; sourceTree = "<group>"; };
 		3DD48210146A608A00907E04 /* CompanyMapDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyMapDataManager.h; sourceTree = "<group>"; };
 		3DD48211146A608A00907E04 /* CompanyMapDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyMapDataManager.m; sourceTree = "<group>"; };
+		3DF1A0A0146A6BFC0070CA74 /* Visit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visit.h; sourceTree = "<group>"; };
+		3DF1A0A1146A6BFC0070CA74 /* Visit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Visit.m; sourceTree = "<group>"; };
+		3DF1A0A3146A6BFD0070CA74 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		3DF1A0A4146A6BFD0070CA74 /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,10 @@
 				3DD4820D146A4B9400907E04 /* Company.xcdatamodeld */,
 				3DD48210146A608A00907E04 /* CompanyMapDataManager.h */,
 				3DD48211146A608A00907E04 /* CompanyMapDataManager.m */,
+				3DF1A0A3146A6BFD0070CA74 /* Company.h */,
+				3DF1A0A4146A6BFD0070CA74 /* Company.m */,
+				3DF1A0A0146A6BFC0070CA74 /* Visit.h */,
+				3DF1A0A1146A6BFC0070CA74 /* Visit.m */,
 			);
 			path = CompanyMap;
 			sourceTree = "<group>";
@@ -310,6 +320,8 @@
 				3DD48200146A3B5C00907E04 /* RecordViewController.m in Sources */,
 				3DD4820F146A4B9400907E04 /* Company.xcdatamodeld in Sources */,
 				3DD48212146A608A00907E04 /* CompanyMapDataManager.m in Sources */,
+				3DF1A0A2146A6BFC0070CA74 /* Visit.m in Sources */,
+				3DF1A0A5146A6BFD0070CA74 /* Company.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

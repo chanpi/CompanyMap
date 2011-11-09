@@ -1,14 +1,14 @@
 //
-//  SecondViewController.m
+//  SearchViewController.m
 //  CompanyMap
 //
 //  Created by  on 11/11/09.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "SearchViewController.h"
 
-@implementation SecondViewController
+@implementation SearchViewController
 
 - (void)didReceiveMemoryWarning
 {
@@ -17,6 +17,22 @@
 }
 
 #pragma mark - View lifecycle
+
+/*
+// UIViewでやらねばならない
+- (void)_drawLine
+{
+    CGContextRef cgcontext = UIGraphicsGetCurrentContext();
+    
+    // 線の色
+//    CGContextSetRGBStrokeColor(cgcontext, 0.0f, 0.0f, 0.0f, 0.9f);
+    CGContextSetRGBStrokeColor(cgcontext, 0.1f, 0.1f, 0.9f, 1.0f);
+    
+    CGContextMoveToPoint(cgcontext, 20, 95);
+    CGContextAddLineToPoint(cgcontext, 300, 95);
+    CGContextStrokePath(cgcontext);
+}
+*/
 
 - (void)viewDidLoad
 {

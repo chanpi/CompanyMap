@@ -1,14 +1,16 @@
 //
-//  FirstViewController.m
+//  MapViewController.m
 //  CompanyMap
 //
 //  Created by  on 11/11/09.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "MapViewController.h"
 
-@implementation FirstViewController
+@implementation MapViewController
+
+@synthesize mapView_;
 
 - (void)didReceiveMemoryWarning
 {
@@ -18,10 +20,37 @@
 
 #pragma mark - View lifecycle
 
+- (void)_showCompanyMap
+{
+    mapView_.showsUserLocation = YES;
+    
+    locationManager_ = [[CLLocationManager alloc] init];
+    [locationManager_ setDelegate:self];
+    [locationManager_ setDesiredAccuracy:kCLLocationAccuracyBest];
+    [locationManager_ setDistanceFilter:kCLDistanceFilterNone];
+    [locationManager_ startUpdatingLocation];
+}
+
+- (void)_hideCompanyMap
+{
+//    [locationManager_ release];
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation
+{
+    MKCoordinateSpan span = MKCoordinateSpanMake(0.005, 0.005);
+    MKCoordinateRegion region = MKCoordinateRegionMake(newLocation.coordinate, span);
+    [mapView_ setRegion:region animated:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self _showCompanyMap];
 }
 
 - (void)viewDidUnload

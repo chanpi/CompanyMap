@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  RecordViewController.h
 //  CompanyMap
 //
 //  Created by  on 11/11/09.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface RecordViewController : UIViewController
 
 @end

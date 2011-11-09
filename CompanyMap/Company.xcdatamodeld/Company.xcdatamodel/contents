@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="870" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Company" syncable="YES">
+    <entity name="Company" representedClassName="Company" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="category" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="headcount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
@@ -10,7 +10,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="visits" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Visit" inverseName="company" inverseEntity="Visit" syncable="YES"/>
     </entity>
-    <entity name="Visit" syncable="YES">
+    <entity name="Visit" representedClassName="Visit" syncable="YES">
         <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,7 +19,7 @@
         <relationship name="company" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="visits" inverseEntity="Company" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Company" positionX="88" positionY="186" width="128" height="165"/>
-        <element name="Visit" positionX="-137" positionY="189" width="128" height="135"/>
+        <element name="Company" positionX="-135" positionY="180" width="128" height="165"/>
+        <element name="Visit" positionX="135" positionY="180" width="128" height="135"/>
     </elements>
 </model>
