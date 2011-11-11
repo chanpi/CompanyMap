@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D212FE9146CE23700D18562 /* HRGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D212FE8146CE23700D18562 /* HRGlobal.m */; };
+		3D212FEC146CE78400D18562 /* HRRestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D212FEB146CE78400D18562 /* HRRestModel.m */; };
+		3D212FF0146CFB2E00D18562 /* HRRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D212FEF146CFB2E00D18562 /* HRRequestOperation.m */; };
+		3D212FF5146D0D9A00D18562 /* NSDictionary+ParamUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D212FF4146D0D9A00D18562 /* NSDictionary+ParamUtils.m */; };
+		3D212FF8146D0DBB00D18562 /* NSObject+InvocationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D212FF7146D0DBB00D18562 /* NSObject+InvocationUtils.m */; };
+		3D212FFB146D0DD900D18562 /* NSString+EscapingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D212FFA146D0DD900D18562 /* NSString+EscapingUtils.m */; };
 		3DD481B7146A2E9C00907E04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481B6146A2E9C00907E04 /* UIKit.framework */; };
 		3DD481B9146A2E9C00907E04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481B8146A2E9C00907E04 /* Foundation.framework */; };
 		3DD481BB146A2E9C00907E04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481BA146A2E9C00907E04 /* CoreGraphics.framework */; };
@@ -33,6 +39,8 @@
 		3DD48212146A608A00907E04 /* CompanyMapDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD48211146A608A00907E04 /* CompanyMapDataManager.m */; };
 		3DF1A0A2146A6BFC0070CA74 /* Visit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1A0A1146A6BFC0070CA74 /* Visit.m */; };
 		3DF1A0A5146A6BFD0070CA74 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1A0A4146A6BFD0070CA74 /* Company.m */; };
+		3DF68794146CD0A20096A67B /* FoursquareWebLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF68792146CD0A20096A67B /* FoursquareWebLogin.m */; };
+		3DF6879B146CE0940096A67B /* Foursquare2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6879A146CE0940096A67B /* Foursquare2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D212FE7146CE23700D18562 /* HRGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRGlobal.h; sourceTree = "<group>"; };
+		3D212FE8146CE23700D18562 /* HRGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRGlobal.m; sourceTree = "<group>"; };
+		3D212FEA146CE78400D18562 /* HRRestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRRestModel.h; sourceTree = "<group>"; };
+		3D212FEB146CE78400D18562 /* HRRestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRRestModel.m; sourceTree = "<group>"; };
+		3D212FED146CF9E500D18562 /* HRResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRResponseDelegate.h; sourceTree = "<group>"; };
+		3D212FEE146CFB2E00D18562 /* HRRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRRequestOperation.h; sourceTree = "<group>"; };
+		3D212FEF146CFB2E00D18562 /* HRRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRRequestOperation.m; sourceTree = "<group>"; };
+		3D212FF3146D0D9A00D18562 /* NSDictionary+ParamUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ParamUtils.h"; sourceTree = "<group>"; };
+		3D212FF4146D0D9A00D18562 /* NSDictionary+ParamUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ParamUtils.m"; sourceTree = "<group>"; };
+		3D212FF6146D0DBB00D18562 /* NSObject+InvocationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+InvocationUtils.h"; sourceTree = "<group>"; };
+		3D212FF7146D0DBB00D18562 /* NSObject+InvocationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+InvocationUtils.m"; sourceTree = "<group>"; };
+		3D212FF9146D0DD900D18562 /* NSString+EscapingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EscapingUtils.h"; sourceTree = "<group>"; };
+		3D212FFA146D0DD900D18562 /* NSString+EscapingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EscapingUtils.m"; sourceTree = "<group>"; };
 		3DD481B2146A2E9C00907E04 /* CompanyMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompanyMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD481B6146A2E9C00907E04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DD481B8146A2E9C00907E04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,6 +104,11 @@
 		3DF1A0A1146A6BFC0070CA74 /* Visit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Visit.m; sourceTree = "<group>"; };
 		3DF1A0A3146A6BFD0070CA74 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
 		3DF1A0A4146A6BFD0070CA74 /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		3DF68791146CD0A20096A67B /* FoursquareWebLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareWebLogin.h; sourceTree = "<group>"; };
+		3DF68792146CD0A20096A67B /* FoursquareWebLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareWebLogin.m; sourceTree = "<group>"; };
+		3DF68797146CD73B0096A67B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		3DF68799146CE0940096A67B /* Foursquare2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foursquare2.h; sourceTree = "<group>"; };
+		3DF6879A146CE0940096A67B /* Foursquare2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foursquare2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +137,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D212FE5146CE1F100D18562 /* HTTPRiot */ = {
+			isa = PBXGroup;
+			children = (
+				3D212FF2146D0D6C00D18562 /* Formatters */,
+				3D212FF1146D0D6000D18562 /* Extensions */,
+				3D212FE7146CE23700D18562 /* HRGlobal.h */,
+				3D212FE8146CE23700D18562 /* HRGlobal.m */,
+				3D212FEA146CE78400D18562 /* HRRestModel.h */,
+				3D212FEB146CE78400D18562 /* HRRestModel.m */,
+				3D212FED146CF9E500D18562 /* HRResponseDelegate.h */,
+				3D212FEE146CFB2E00D18562 /* HRRequestOperation.h */,
+				3D212FEF146CFB2E00D18562 /* HRRequestOperation.m */,
+			);
+			name = HTTPRiot;
+			sourceTree = "<group>";
+		};
+		3D212FF1146D0D6000D18562 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D212FF3146D0D9A00D18562 /* NSDictionary+ParamUtils.h */,
+				3D212FF4146D0D9A00D18562 /* NSDictionary+ParamUtils.m */,
+				3D212FF6146D0DBB00D18562 /* NSObject+InvocationUtils.h */,
+				3D212FF7146D0DBB00D18562 /* NSObject+InvocationUtils.m */,
+				3D212FF9146D0DD900D18562 /* NSString+EscapingUtils.h */,
+				3D212FFA146D0DD900D18562 /* NSString+EscapingUtils.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		3D212FF2146D0D6C00D18562 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Formatters;
+			sourceTree = "<group>";
+		};
 		3DD481A7146A2E9C00907E04 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +208,7 @@
 		3DD481BC146A2E9C00907E04 /* CompanyMap */ = {
 			isa = PBXGroup;
 			children = (
+				3DF68798146CE0580096A67B /* Foursquare2 */,
 				3DD481C5146A2E9C00907E04 /* AppDelegate.h */,
 				3DD481C6146A2E9C00907E04 /* AppDelegate.m */,
 				3DD481C8146A2E9C00907E04 /* MainStoryboard_iPhone.storyboard */,
@@ -168,6 +231,9 @@
 				3DF1A0A4146A6BFD0070CA74 /* Company.m */,
 				3DF1A0A0146A6BFC0070CA74 /* Visit.h */,
 				3DF1A0A1146A6BFC0070CA74 /* Visit.m */,
+				3DF68791146CD0A20096A67B /* FoursquareWebLogin.h */,
+				3DF68792146CD0A20096A67B /* FoursquareWebLogin.m */,
+				3DF68797146CD73B0096A67B /* Constants.h */,
 			);
 			path = CompanyMap;
 			sourceTree = "<group>";
@@ -200,6 +266,16 @@
 				3DD481EB146A2E9D00907E04 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DF68798146CE0580096A67B /* Foursquare2 */ = {
+			isa = PBXGroup;
+			children = (
+				3D212FE5146CE1F100D18562 /* HTTPRiot */,
+				3DF68799146CE0940096A67B /* Foursquare2.h */,
+				3DF6879A146CE0940096A67B /* Foursquare2.m */,
+			);
+			name = Foursquare2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +398,14 @@
 				3DD48212146A608A00907E04 /* CompanyMapDataManager.m in Sources */,
 				3DF1A0A2146A6BFC0070CA74 /* Visit.m in Sources */,
 				3DF1A0A5146A6BFD0070CA74 /* Company.m in Sources */,
+				3DF68794146CD0A20096A67B /* FoursquareWebLogin.m in Sources */,
+				3DF6879B146CE0940096A67B /* Foursquare2.m in Sources */,
+				3D212FE9146CE23700D18562 /* HRGlobal.m in Sources */,
+				3D212FEC146CE78400D18562 /* HRRestModel.m in Sources */,
+				3D212FF0146CFB2E00D18562 /* HRRequestOperation.m in Sources */,
+				3D212FF5146D0D9A00D18562 /* NSDictionary+ParamUtils.m in Sources */,
+				3D212FF8146D0DBB00D18562 /* NSObject+InvocationUtils.m in Sources */,
+				3D212FFB146D0DD900D18562 /* NSString+EscapingUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
