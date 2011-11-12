@@ -13,6 +13,7 @@
 		3D212FF5146D0D9A00D18562 /* NSDictionary+ParamUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D212FF4146D0D9A00D18562 /* NSDictionary+ParamUtils.m */; };
 		3D212FF8146D0DBB00D18562 /* NSObject+InvocationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D212FF7146D0DBB00D18562 /* NSObject+InvocationUtils.m */; };
 		3D212FFB146D0DD900D18562 /* NSString+EscapingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D212FFA146D0DD900D18562 /* NSString+EscapingUtils.m */; };
+		3D871833146DF2B600C12C0D /* HRFormatJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D871832146DF2B600C12C0D /* HRFormatJSON.m */; };
 		3DD481B7146A2E9C00907E04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481B6146A2E9C00907E04 /* UIKit.framework */; };
 		3DD481B9146A2E9C00907E04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481B8146A2E9C00907E04 /* Foundation.framework */; };
 		3DD481BB146A2E9C00907E04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481BA146A2E9C00907E04 /* CoreGraphics.framework */; };
@@ -67,6 +68,10 @@
 		3D212FF7146D0DBB00D18562 /* NSObject+InvocationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+InvocationUtils.m"; sourceTree = "<group>"; };
 		3D212FF9146D0DD900D18562 /* NSString+EscapingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EscapingUtils.h"; sourceTree = "<group>"; };
 		3D212FFA146D0DD900D18562 /* NSString+EscapingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EscapingUtils.m"; sourceTree = "<group>"; };
+		3D871831146DF2B600C12C0D /* HRFormatJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRFormatJSON.h; sourceTree = "<group>"; };
+		3D871832146DF2B600C12C0D /* HRFormatJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRFormatJSON.m; sourceTree = "<group>"; };
+		3D871835146DF2EA00C12C0D /* HRFormatterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRFormatterProtocol.h; sourceTree = "<group>"; };
+		3D871838146E635500C12C0D /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		3DD481B2146A2E9C00907E04 /* CompanyMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompanyMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD481B6146A2E9C00907E04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DD481B8146A2E9C00907E04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,6 +145,7 @@
 		3D212FE5146CE1F100D18562 /* HTTPRiot */ = {
 			isa = PBXGroup;
 			children = (
+				3D871836146E630900C12C0D /* Vendor */,
 				3D212FF2146D0D6C00D18562 /* Formatters */,
 				3D212FF1146D0D6000D18562 /* Extensions */,
 				3D212FE7146CE23700D18562 /* HRGlobal.h */,
@@ -169,8 +175,27 @@
 		3D212FF2146D0D6C00D18562 /* Formatters */ = {
 			isa = PBXGroup;
 			children = (
+				3D871831146DF2B600C12C0D /* HRFormatJSON.h */,
+				3D871832146DF2B600C12C0D /* HRFormatJSON.m */,
+				3D871835146DF2EA00C12C0D /* HRFormatterProtocol.h */,
 			);
 			name = Formatters;
+			sourceTree = "<group>";
+		};
+		3D871836146E630900C12C0D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				3D871837146E631E00C12C0D /* JSON */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		3D871837146E631E00C12C0D /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3D871838146E635500C12C0D /* JSON.h */,
+			);
+			name = JSON;
 			sourceTree = "<group>";
 		};
 		3DD481A7146A2E9C00907E04 = {
@@ -406,6 +431,7 @@
 				3D212FF5146D0D9A00D18562 /* NSDictionary+ParamUtils.m in Sources */,
 				3D212FF8146D0DBB00D18562 /* NSObject+InvocationUtils.m in Sources */,
 				3D212FFB146D0DD900D18562 /* NSString+EscapingUtils.m in Sources */,
+				3D871833146DF2B600C12C0D /* HRFormatJSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
