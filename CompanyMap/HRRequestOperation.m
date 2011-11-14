@@ -8,9 +8,9 @@
 
 #import "HRRequestOperation.h"
 
-#define IS_EXECUTING    @"isExecuting"
-#define IS_FINISHED     @"isFinished"
-#define IS_CANCELLED    @"isCancelled"
+NSString* kHRIsExecuting    = @"isExecuting";
+NSString* kHRIsFinished     = @"isFinished";
+NSString* kHRCancelled      = @"isCancelled";
 
 @interface HRRequestOperation (PrivateMethods)
 - (NSMutableURLRequest*)http;
