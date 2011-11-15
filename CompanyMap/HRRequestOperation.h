@@ -14,7 +14,7 @@
 // HRRestModelクラスは本クラスのラッパーです。
 @interface HRRequestOperation : NSOperation {
     /// HRResponse Delegate
-    NSObject<HRResponseDelegate> *delegate_;
+    NSObject<HRResponseDelegate> __unsafe_unretained *delegate_;
 
     /// Connection object
     NSURLConnection* connection_;
@@ -92,6 +92,6 @@
 /**
  * Returns an HRRequestOperation
  */
-+ (HRRequestOperation *)requestWithMethod:(HRRequestMethod)method path:(NSString*)urlPath options:(NSDictionary*)requestOptions object:(id)obj;
++ (HRRequestOperation *)requestWithMethod:(HRRequestMethod)method path:(NSString*)urlPath options:(NSDictionary*)requestOptions object:(id)object;
 
 @end

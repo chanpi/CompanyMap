@@ -17,6 +17,20 @@
 		3D8990F914709C7C0010FFF5 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8990F814709C7C0010FFF5 /* SBJsonParser.m */; };
 		3D89910114709D120010FFF5 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D89910014709D120010FFF5 /* SBJsonBase.m */; };
 		3D89910414709D3B0010FFF5 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D89910314709D3B0010FFF5 /* SBJsonWriter.m */; };
+		3DCE4B48147100790061C9E5 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B47147100790061C9E5 /* SBJSON.m */; };
+		3DCE4B4C14721D810061C9E5 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B4B14721D810061C9E5 /* NSObject+SBJSON.m */; };
+		3DCE4B4F14721DAE0061C9E5 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B4E14721DAD0061C9E5 /* NSString+SBJSON.m */; };
+		3DCE4B521472316C0061C9E5 /* HRFormatXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B511472316C0061C9E5 /* HRFormatXML.m */; };
+		3DCE4B56147233A50061C9E5 /* HRBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B55147233A50061C9E5 /* HRBase64.m */; };
+		3DCE4B59147240970061C9E5 /* HROperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B58147240950061C9E5 /* HROperationQueue.m */; };
+		3DCE4B6214724EA30061C9E5 /* AIXMLDocumentSerialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B6114724EA30061C9E5 /* AIXMLDocumentSerialize.m */; };
+		3DCE4B6514724EC30061C9E5 /* AIXMLElementSerialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B6414724EC30061C9E5 /* AIXMLElementSerialize.m */; };
+		3DCE4B7414724F990061C9E5 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B6A14724F990061C9E5 /* DDXMLDocument.m */; };
+		3DCE4B7514724F990061C9E5 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B6C14724F990061C9E5 /* DDXMLElement.m */; };
+		3DCE4B7614724F990061C9E5 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B6E14724F990061C9E5 /* DDXMLElementAdditions.m */; };
+		3DCE4B7714724F990061C9E5 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B7014724F990061C9E5 /* DDXMLNode.m */; };
+		3DCE4B7814724F990061C9E5 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B7314724F990061C9E5 /* NSStringAdditions.m */; };
+		3DCE4B7A147257220061C9E5 /* libxml2.2.7.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCE4B79147257210061C9E5 /* libxml2.2.7.3.dylib */; };
 		3DD481B7146A2E9C00907E04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481B6146A2E9C00907E04 /* UIKit.framework */; };
 		3DD481B9146A2E9C00907E04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481B8146A2E9C00907E04 /* Foundation.framework */; };
 		3DD481BB146A2E9C00907E04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD481BA146A2E9C00907E04 /* CoreGraphics.framework */; };
@@ -81,6 +95,36 @@
 		3D89910014709D120010FFF5 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
 		3D89910214709D3B0010FFF5 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		3D89910314709D3B0010FFF5 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		3DCE4B46147100790061C9E5 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		3DCE4B47147100790061C9E5 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		3DCE4B4A14721D810061C9E5 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		3DCE4B4B14721D810061C9E5 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		3DCE4B4D14721DAD0061C9E5 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		3DCE4B4E14721DAD0061C9E5 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		3DCE4B501472316C0061C9E5 /* HRFormatXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRFormatXML.h; sourceTree = "<group>"; };
+		3DCE4B511472316C0061C9E5 /* HRFormatXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRFormatXML.m; sourceTree = "<group>"; };
+		3DCE4B54147233A50061C9E5 /* HRBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRBase64.h; sourceTree = "<group>"; };
+		3DCE4B55147233A50061C9E5 /* HRBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRBase64.m; sourceTree = "<group>"; };
+		3DCE4B57147240950061C9E5 /* HROperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HROperationQueue.h; sourceTree = "<group>"; };
+		3DCE4B58147240950061C9E5 /* HROperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HROperationQueue.m; sourceTree = "<group>"; };
+		3DCE4B5F14724DF40061C9E5 /* AIXMLSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIXMLSerialization.h; sourceTree = "<group>"; };
+		3DCE4B6014724EA30061C9E5 /* AIXMLDocumentSerialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIXMLDocumentSerialize.h; sourceTree = "<group>"; };
+		3DCE4B6114724EA30061C9E5 /* AIXMLDocumentSerialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIXMLDocumentSerialize.m; sourceTree = "<group>"; };
+		3DCE4B6314724EC30061C9E5 /* AIXMLElementSerialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIXMLElementSerialize.h; sourceTree = "<group>"; };
+		3DCE4B6414724EC30061C9E5 /* AIXMLElementSerialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIXMLElementSerialize.m; sourceTree = "<group>"; };
+		3DCE4B6814724F990061C9E5 /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		3DCE4B6914724F990061C9E5 /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		3DCE4B6A14724F990061C9E5 /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		3DCE4B6B14724F990061C9E5 /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		3DCE4B6C14724F990061C9E5 /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		3DCE4B6D14724F990061C9E5 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		3DCE4B6E14724F990061C9E5 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		3DCE4B6F14724F990061C9E5 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		3DCE4B7014724F990061C9E5 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		3DCE4B7114724F990061C9E5 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		3DCE4B7214724F990061C9E5 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		3DCE4B7314724F990061C9E5 /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
+		3DCE4B79147257210061C9E5 /* libxml2.2.7.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.7.3.dylib; path = usr/lib/libxml2.2.7.3.dylib; sourceTree = SDKROOT; };
 		3DD481B2146A2E9C00907E04 /* CompanyMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompanyMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD481B6146A2E9C00907E04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DD481B8146A2E9C00907E04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -130,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DCE4B7A147257220061C9E5 /* libxml2.2.7.3.dylib in Frameworks */,
 				3DD481FC146A37E100907E04 /* CoreLocation.framework in Frameworks */,
 				3DD481FA146A37CC00907E04 /* MapKit.framework in Frameworks */,
 				3DD481B7146A2E9C00907E04 /* UIKit.framework in Frameworks */,
@@ -154,6 +199,7 @@
 		3D212FE5146CE1F100D18562 /* HTTPRiot */ = {
 			isa = PBXGroup;
 			children = (
+				3DCE4B531472337F0061C9E5 /* Utilities */,
 				3D871836146E630900C12C0D /* Vendor */,
 				3D212FF2146D0D6C00D18562 /* Formatters */,
 				3D212FF1146D0D6000D18562 /* Extensions */,
@@ -164,6 +210,8 @@
 				3D212FED146CF9E500D18562 /* HRResponseDelegate.h */,
 				3D212FEE146CFB2E00D18562 /* HRRequestOperation.h */,
 				3D212FEF146CFB2E00D18562 /* HRRequestOperation.m */,
+				3DCE4B57147240950061C9E5 /* HROperationQueue.h */,
+				3DCE4B58147240950061C9E5 /* HROperationQueue.m */,
 			);
 			name = HTTPRiot;
 			sourceTree = "<group>";
@@ -187,6 +235,8 @@
 				3D871831146DF2B600C12C0D /* HRFormatJSON.h */,
 				3D871832146DF2B600C12C0D /* HRFormatJSON.m */,
 				3D871835146DF2EA00C12C0D /* HRFormatterProtocol.h */,
+				3DCE4B501472316C0061C9E5 /* HRFormatXML.h */,
+				3DCE4B511472316C0061C9E5 /* HRFormatXML.m */,
 			);
 			name = Formatters;
 			sourceTree = "<group>";
@@ -194,6 +244,8 @@
 		3D871836146E630900C12C0D /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				3DCE4B6714724F7E0061C9E5 /* KissXML */,
+				3DCE4B5E14724DBA0061C9E5 /* AIXMLSerialization */,
 				3D871837146E631E00C12C0D /* JSON */,
 			);
 			name = Vendor;
@@ -209,8 +261,54 @@
 				3D89910014709D120010FFF5 /* SBJsonBase.m */,
 				3D89910214709D3B0010FFF5 /* SBJsonWriter.h */,
 				3D89910314709D3B0010FFF5 /* SBJsonWriter.m */,
+				3DCE4B46147100790061C9E5 /* SBJSON.h */,
+				3DCE4B47147100790061C9E5 /* SBJSON.m */,
+				3DCE4B4A14721D810061C9E5 /* NSObject+SBJSON.h */,
+				3DCE4B4B14721D810061C9E5 /* NSObject+SBJSON.m */,
+				3DCE4B4D14721DAD0061C9E5 /* NSString+SBJSON.h */,
+				3DCE4B4E14721DAD0061C9E5 /* NSString+SBJSON.m */,
 			);
 			name = JSON;
+			sourceTree = "<group>";
+		};
+		3DCE4B531472337F0061C9E5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3DCE4B54147233A50061C9E5 /* HRBase64.h */,
+				3DCE4B55147233A50061C9E5 /* HRBase64.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		3DCE4B5E14724DBA0061C9E5 /* AIXMLSerialization */ = {
+			isa = PBXGroup;
+			children = (
+				3DCE4B5F14724DF40061C9E5 /* AIXMLSerialization.h */,
+				3DCE4B6014724EA30061C9E5 /* AIXMLDocumentSerialize.h */,
+				3DCE4B6114724EA30061C9E5 /* AIXMLDocumentSerialize.m */,
+				3DCE4B6314724EC30061C9E5 /* AIXMLElementSerialize.h */,
+				3DCE4B6414724EC30061C9E5 /* AIXMLElementSerialize.m */,
+			);
+			name = AIXMLSerialization;
+			sourceTree = "<group>";
+		};
+		3DCE4B6714724F7E0061C9E5 /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				3DCE4B6814724F990061C9E5 /* DDXML.h */,
+				3DCE4B6914724F990061C9E5 /* DDXMLDocument.h */,
+				3DCE4B6A14724F990061C9E5 /* DDXMLDocument.m */,
+				3DCE4B6B14724F990061C9E5 /* DDXMLElement.h */,
+				3DCE4B6C14724F990061C9E5 /* DDXMLElement.m */,
+				3DCE4B6D14724F990061C9E5 /* DDXMLElementAdditions.h */,
+				3DCE4B6E14724F990061C9E5 /* DDXMLElementAdditions.m */,
+				3DCE4B6F14724F990061C9E5 /* DDXMLNode.h */,
+				3DCE4B7014724F990061C9E5 /* DDXMLNode.m */,
+				3DCE4B7114724F990061C9E5 /* DDXMLPrivate.h */,
+				3DCE4B7214724F990061C9E5 /* NSStringAdditions.h */,
+				3DCE4B7314724F990061C9E5 /* NSStringAdditions.m */,
+			);
+			name = KissXML;
 			sourceTree = "<group>";
 		};
 		3DD481A7146A2E9C00907E04 = {
@@ -235,6 +333,7 @@
 		3DD481B5146A2E9C00907E04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DCE4B79147257210061C9E5 /* libxml2.2.7.3.dylib */,
 				3DD481FB146A37E100907E04 /* CoreLocation.framework */,
 				3DD481F9146A37CC00907E04 /* MapKit.framework */,
 				3DD481B6146A2E9C00907E04 /* UIKit.framework */,
@@ -450,6 +549,19 @@
 				3D8990F914709C7C0010FFF5 /* SBJsonParser.m in Sources */,
 				3D89910114709D120010FFF5 /* SBJsonBase.m in Sources */,
 				3D89910414709D3B0010FFF5 /* SBJsonWriter.m in Sources */,
+				3DCE4B48147100790061C9E5 /* SBJSON.m in Sources */,
+				3DCE4B4C14721D810061C9E5 /* NSObject+SBJSON.m in Sources */,
+				3DCE4B4F14721DAE0061C9E5 /* NSString+SBJSON.m in Sources */,
+				3DCE4B521472316C0061C9E5 /* HRFormatXML.m in Sources */,
+				3DCE4B56147233A50061C9E5 /* HRBase64.m in Sources */,
+				3DCE4B59147240970061C9E5 /* HROperationQueue.m in Sources */,
+				3DCE4B6214724EA30061C9E5 /* AIXMLDocumentSerialize.m in Sources */,
+				3DCE4B6514724EC30061C9E5 /* AIXMLElementSerialize.m in Sources */,
+				3DCE4B7414724F990061C9E5 /* DDXMLDocument.m in Sources */,
+				3DCE4B7514724F990061C9E5 /* DDXMLElement.m in Sources */,
+				3DCE4B7614724F990061C9E5 /* DDXMLElementAdditions.m in Sources */,
+				3DCE4B7714724F990061C9E5 /* DDXMLNode.m in Sources */,
+				3DCE4B7814724F990061C9E5 /* NSStringAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

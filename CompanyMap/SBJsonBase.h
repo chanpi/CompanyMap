@@ -11,10 +11,10 @@
 extern NSString* SBJSONErrorDomain;
 
 enum {
-    ENUMSUPPORTED = 1,
+    EUNSUPPORTED = 1,
     EPARSENUM,
     EPARSE,
-    EFLAGMENT,
+    EFRAGMENT,
     ECTRL,
     EUNICODE,
     EDEPTH,

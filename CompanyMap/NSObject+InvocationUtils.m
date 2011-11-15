@@ -10,7 +10,7 @@
 
 @implementation NSObject (InvocationUtils)
 
-- (void)performSelectorOnMainThread:(SEL)aSelector withObject:(id)arg1, ...
+- (void)performSelectorOnMainThread:(SEL)aSelector withObjects:(id)arg1, ...
 {
     id argitem;
     va_list args;

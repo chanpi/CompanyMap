@@ -7,6 +7,8 @@
 //
 
 #import "HRRestModel.h"
+#import "HRRequestOperation.h"
+#import "HRGlobal.h"
 
 @interface HRRestModel (PrivateMethods)
 + (void)setAttributeValue:(id) o forKey:(NSString*)key;
@@ -140,7 +142,7 @@ static NSMutableDictionary* attributes;
 + (NSOperation*)requestWithMethod:(HRRequestMethod)method path:(NSString*)path options:(NSDictionary*)options object:(id)object
 {
     NSMutableDictionary* opts = [self mergedOptions:options];
-    return [HRReq];
+    return [HRRequestOperation requestWithMethod:method path:path options:opts object:object];
 }
 
 + (NSMutableDictionary*)mergedOptions:(NSDictionary*)options
