@@ -17,6 +17,8 @@
 		3D8990F914709C7C0010FFF5 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8990F814709C7C0010FFF5 /* SBJsonParser.m */; };
 		3D89910114709D120010FFF5 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D89910014709D120010FFF5 /* SBJsonBase.m */; };
 		3D89910414709D3B0010FFF5 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D89910314709D3B0010FFF5 /* SBJsonWriter.m */; };
+		3D9FE2091473A73100232152 /* PhotoFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE2081473A73100232152 /* PhotoFormatter.m */; };
+		3D9FE20D1473A93300232152 /* HRRequestOperation+PhotoExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE20C1473A93300232152 /* HRRequestOperation+PhotoExt.m */; };
 		3DCE4B48147100790061C9E5 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B47147100790061C9E5 /* SBJSON.m */; };
 		3DCE4B4C14721D810061C9E5 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B4B14721D810061C9E5 /* NSObject+SBJSON.m */; };
 		3DCE4B4F14721DAE0061C9E5 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE4B4E14721DAD0061C9E5 /* NSString+SBJSON.m */; };
@@ -95,6 +97,10 @@
 		3D89910014709D120010FFF5 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
 		3D89910214709D3B0010FFF5 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		3D89910314709D3B0010FFF5 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		3D9FE2071473A73100232152 /* PhotoFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoFormatter.h; sourceTree = "<group>"; };
+		3D9FE2081473A73100232152 /* PhotoFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoFormatter.m; sourceTree = "<group>"; };
+		3D9FE20B1473A93300232152 /* HRRequestOperation+PhotoExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HRRequestOperation+PhotoExt.h"; sourceTree = "<group>"; };
+		3D9FE20C1473A93300232152 /* HRRequestOperation+PhotoExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HRRequestOperation+PhotoExt.m"; sourceTree = "<group>"; };
 		3DCE4B46147100790061C9E5 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
 		3DCE4B47147100790061C9E5 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
 		3DCE4B4A14721D810061C9E5 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 		3DD4820E146A4B9400907E04 /* Company.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Company.xcdatamodel; sourceTree = "<group>"; };
 		3DD48210146A608A00907E04 /* CompanyMapDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyMapDataManager.h; sourceTree = "<group>"; };
 		3DD48211146A608A00907E04 /* CompanyMapDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyMapDataManager.m; sourceTree = "<group>"; };
+		3DEF1C7B14733FD70036B4F0 /* HTTPRiot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRiot.h; sourceTree = "<group>"; };
 		3DF1A0A0146A6BFC0070CA74 /* Visit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visit.h; sourceTree = "<group>"; };
 		3DF1A0A1146A6BFC0070CA74 /* Visit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Visit.m; sourceTree = "<group>"; };
 		3DF1A0A3146A6BFD0070CA74 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
@@ -212,6 +219,7 @@
 				3D212FEF146CFB2E00D18562 /* HRRequestOperation.m */,
 				3DCE4B57147240950061C9E5 /* HROperationQueue.h */,
 				3DCE4B58147240950061C9E5 /* HROperationQueue.m */,
+				3DEF1C7B14733FD70036B4F0 /* HTTPRiot.h */,
 			);
 			name = HTTPRiot;
 			sourceTree = "<group>";
@@ -413,6 +421,10 @@
 				3D212FE5146CE1F100D18562 /* HTTPRiot */,
 				3DF68799146CE0940096A67B /* Foursquare2.h */,
 				3DF6879A146CE0940096A67B /* Foursquare2.m */,
+				3D9FE2071473A73100232152 /* PhotoFormatter.h */,
+				3D9FE2081473A73100232152 /* PhotoFormatter.m */,
+				3D9FE20B1473A93300232152 /* HRRequestOperation+PhotoExt.h */,
+				3D9FE20C1473A93300232152 /* HRRequestOperation+PhotoExt.m */,
 			);
 			name = Foursquare2;
 			sourceTree = "<group>";
@@ -562,6 +574,8 @@
 				3DCE4B7614724F990061C9E5 /* DDXMLElementAdditions.m in Sources */,
 				3DCE4B7714724F990061C9E5 /* DDXMLNode.m in Sources */,
 				3DCE4B7814724F990061C9E5 /* NSStringAdditions.m in Sources */,
+				3D9FE2091473A73100232152 /* PhotoFormatter.m in Sources */,
+				3D9FE20D1473A93300232152 /* HRRequestOperation+PhotoExt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
