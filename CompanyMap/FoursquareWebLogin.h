@@ -11,7 +11,7 @@
 @interface FoursquareWebLogin : UIViewController<UIWebViewDelegate> {
     NSString* url_;
     UIWebView* webView_;
-    id delegate_;
+    id __unsafe_unretained delegate_;
     SEL selector_;
 }
 

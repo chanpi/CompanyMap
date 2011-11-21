@@ -17,10 +17,13 @@
 	// If a wrapper object already exists, the _private variable is pointing to it.
 	
 	xmlNodePtr node = (xmlNodePtr)kindPtr;
-	if(node->_private == NULL)
-		return [[[DDXMLElement alloc] initWithCheckedPrimitive:kindPtr] autorelease];
-	else
-		return [[((DDXMLElement *)(node->_private)) retain] autorelease];
+	if(node->_private == NULL) {
+		//return [[[DDXMLElement alloc] initWithCheckedPrimitive:kindPtr] autorelease];
+		return [[DDXMLElement alloc] initWithCheckedPrimitive:kindPtr];
+	} else {
+		//return [[((DDXMLElement *)(node->_private)) retain] autorelease];
+		return ((__bridge DDXMLElement *)(node->_private));
+    }
 }
 
 /**
@@ -42,7 +45,7 @@
 	xmlNodePtr node = xmlNewNode(NULL, [name xmlChar]);
 	if(node == NULL)
 	{
-		[self release];
+		//[self release];
 		return nil;
 	}
 	
@@ -56,7 +59,7 @@
 	xmlNodePtr node = xmlNewNode(NULL, [name xmlChar]);
 	if(node == NULL)
 	{
-		[self release];
+		//[self release];
 		return nil;
 	}
 	
@@ -73,7 +76,7 @@
 	xmlNodePtr node = xmlNewNode(NULL, [name xmlChar]);
 	if(node == NULL)
 	{
-		[self release];
+		//[self release];
 		return nil;
 	}
 	
@@ -88,16 +91,17 @@
 	DDXMLDocument *doc = [[DDXMLDocument alloc] initWithXMLString:string options:0 error:error];
 	if(doc == nil)
 	{
-		[self release];
+		//[self release];
 		return nil;
 	}
 	
 	DDXMLElement *result = [doc rootElement];
 	[result detach];
-	[doc release];
+	//[doc release];
 	
-	[self release];
-	return [result retain];
+	//[self release];
+	//return [result retain];
+    return result;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -14,8 +14,8 @@
 
 @implementation FoursquareWebLogin
 
-@synthesize delegate;
-@synthesize selector;
+@synthesize delegate = delegate_;
+@synthesize selector = selector_;
 
 /*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -57,6 +57,7 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     NSString* url = [[request URL] absoluteString];
+        
     if ([url rangeOfString:@"code="].length != 0) {
         NSHTTPCookie* cookie;
         NSHTTPCookieStorage* storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
@@ -66,12 +67,12 @@
             }
         }
         NSArray* array = [url componentsSeparatedByString:@"="];
-        [delegate performSelector:selector withObject:[array objectAtIndex:1]];
+        [delegate_ performSelector:selector_ withObject:[array objectAtIndex:1]]; // AppDelegateで設定
         [self cancel];
         
     } else if ([url rangeOfString:@"error="].length != 0) {
         NSArray* array = [url componentsSeparatedByString:@"="];
-        [delegate performSelector:selector withObject:[array objectAtIndex:1]];
+        [delegate_ performSelector:selector_ withObject:[array objectAtIndex:1]]; // AppDelegateで設定
         NSLog(@"Foursquare: %@", [array objectAtIndex:1]);
         
     }

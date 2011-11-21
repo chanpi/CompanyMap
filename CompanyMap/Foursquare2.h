@@ -125,7 +125,7 @@ typedef enum {
                    phone:(NSString*)phone
                 latitude:(NSString*)latitude
                longitude:(NSString*)longitude
-       primaryCategoryId:(NSString*)prmaryCategoryId
+       primaryCategoryId:(NSString*)primaryCategoryId
                 callback:(Foursquare2Callback)callback;
 
 + (void)getVenueCategoriesCallback:(Foursquare2Callback)callback;

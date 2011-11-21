@@ -67,6 +67,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="freeSearchButtonTouched:" destination="3" eventType="touchUpInside" id="3KR-yz-VvD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RiJ-ls-KxQ">
                                 <rect key="frame" x="20" y="124" width="280" height="37"/>
@@ -80,6 +83,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="areaButtonTouched:" destination="3" eventType="touchUpInside" id="gYS-FH-8dd"/>
                                     <segue destination="vwj-ZP-eqh" kind="modal" id="fBD-SJ-jxt"/>
                                 </connections>
                             </button>
@@ -94,6 +98,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="headCountButtonTouched:" destination="3" eventType="touchUpInside" id="Ipc-IS-HB8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EUO-UQ-g1J">
                                 <rect key="frame" x="20" y="259" width="280" height="37"/>
@@ -106,6 +113,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="visitDayButtonTouched:" destination="3" eventType="touchUpInside" id="xZS-Eu-YHN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aMt-ve-yCg">
                                 <rect key="frame" x="20" y="304" width="280" height="37"/>
@@ -118,6 +128,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="visitPurposeButtonTouched:" destination="3" eventType="touchUpInside" id="vCY-jA-Jc4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pLF-7n-g7Q">
                                 <rect key="frame" x="20" y="214" width="280" height="37"/>
@@ -130,6 +143,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="categoryButtonTouched:" destination="3" eventType="touchUpInside" id="KcC-8A-Gf8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cwU-qS-qWW">
                                 <rect key="frame" x="124" y="360" width="72" height="31"/>
@@ -142,11 +158,23 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="limitedSearchButtonTouched:" destination="3" eventType="touchUpInside" id="ldc-lh-ras"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="検索" image="second" id="6"/>
+                    <connections>
+                        <outlet property="areaButton_" destination="RiJ-ls-KxQ" id="8hS-Zr-1Pm"/>
+                        <outlet property="categoryButton_" destination="pLF-7n-g7Q" id="II8-V6-bcy"/>
+                        <outlet property="freeSearchButton_" destination="NDx-XH-Nav" id="Oio-gW-L9f"/>
+                        <outlet property="headCountButton_" destination="20g-Qj-pdZ" id="yM1-ev-IBS"/>
+                        <outlet property="limitedSearchButton_" destination="cwU-qS-qWW" id="ppX-Ag-MhR"/>
+                        <outlet property="visitDayButton_" destination="EUO-UQ-g1J" id="8Ut-ml-46D"/>
+                        <outlet property="visitPurposeButton_" destination="aMt-ve-yCg" id="Saq-tY-clp"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
@@ -353,6 +381,22 @@
         </class>
         <class className="SearchViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="areaButtonTouched:"/>
+                <relationship kind="action" name="categoryButtonTouched:"/>
+                <relationship kind="action" name="freeSearchButtonTouched:"/>
+                <relationship kind="action" name="headCountButtonTouched:"/>
+                <relationship kind="action" name="limitedSearchButtonTouched:"/>
+                <relationship kind="action" name="visitDayButtonTouched:"/>
+                <relationship kind="action" name="visitPurposeButtonTouched:"/>
+                <relationship kind="outlet" name="areaButton_" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="categoryButton_" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="freeSearchButton_" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="headCountButton_" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="limitedSearchButton_" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="visitDayButton_" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="visitPurposeButton_" candidateClass="UIButton"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

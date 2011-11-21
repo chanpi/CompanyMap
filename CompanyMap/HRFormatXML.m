@@ -7,8 +7,39 @@
 //
 
 #import "HRFormatXML.h"
-
+#import "AIXMLSerialization.h"
 
 @implementation HRFormatXML
+
++ (NSString*)extension
+{
+    return @"xml";
+}
+
++ (NSString*)mimeType
+{
+    return @"application/xml";
+}
+
++ (id)decode:(NSData *)data error:(NSError *__autoreleasing *)error
+{
+    NSError* parseError = nil;
+    NSXMLDocument* document = [[NSXMLDocument alloc] initWithData:data options:NSXMLDocumentTidyXML error:&parseError];
+    
+    if (parseError != nil) {
+        if (error != nil) {
+            *error = parseError;
+            return nil;
+        }
+    }
+    
+    return [document toDictionary];
+}
+
++ (NSString*)encode:(id)object error:(NSError *__autoreleasing *)error
+{
+    NSAssert(YES, @"XML Encoding is not supported. Currently accepting patches");
+    return nil;
+}
 
 @end

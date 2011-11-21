@@ -57,6 +57,7 @@
 		3DD48200146A3B5C00907E04 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD481FE146A3B5C00907E04 /* RecordViewController.m */; };
 		3DD4820F146A4B9400907E04 /* Company.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DD4820D146A4B9400907E04 /* Company.xcdatamodeld */; };
 		3DD48212146A608A00907E04 /* CompanyMapDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD48211146A608A00907E04 /* CompanyMapDataManager.m */; };
+		3DD568B2147A20330001A1EC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD568B1147A20330001A1EC /* CoreData.framework */; };
 		3DF1A0A2146A6BFC0070CA74 /* Visit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1A0A1146A6BFC0070CA74 /* Visit.m */; };
 		3DF1A0A5146A6BFD0070CA74 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1A0A4146A6BFD0070CA74 /* Company.m */; };
 		3DF68794146CD0A20096A67B /* FoursquareWebLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF68792146CD0A20096A67B /* FoursquareWebLogin.m */; };
@@ -164,6 +165,7 @@
 		3DD4820E146A4B9400907E04 /* Company.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Company.xcdatamodel; sourceTree = "<group>"; };
 		3DD48210146A608A00907E04 /* CompanyMapDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyMapDataManager.h; sourceTree = "<group>"; };
 		3DD48211146A608A00907E04 /* CompanyMapDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyMapDataManager.m; sourceTree = "<group>"; };
+		3DD568B1147A20330001A1EC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3DEF1C7B14733FD70036B4F0 /* HTTPRiot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRiot.h; sourceTree = "<group>"; };
 		3DF1A0A0146A6BFC0070CA74 /* Visit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visit.h; sourceTree = "<group>"; };
 		3DF1A0A1146A6BFC0070CA74 /* Visit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Visit.m; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD568B2147A20330001A1EC /* CoreData.framework in Frameworks */,
 				3DCE4B7A147257220061C9E5 /* libxml2.2.7.3.dylib in Frameworks */,
 				3DD481FC146A37E100907E04 /* CoreLocation.framework in Frameworks */,
 				3DD481FA146A37CC00907E04 /* MapKit.framework in Frameworks */,
@@ -341,6 +344,7 @@
 		3DD481B5146A2E9C00907E04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DD568B1147A20330001A1EC /* CoreData.framework */,
 				3DCE4B79147257210061C9E5 /* libxml2.2.7.3.dylib */,
 				3DD481FB146A37E100907E04 /* CoreLocation.framework */,
 				3DD481F9146A37CC00907E04 /* MapKit.framework */,
@@ -685,6 +689,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CompanyMap/CompanyMap-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "CompanyMap/CompanyMap-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -696,6 +701,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CompanyMap/CompanyMap-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "CompanyMap/CompanyMap-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

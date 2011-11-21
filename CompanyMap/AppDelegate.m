@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FoursquareWebLogin.h"
 
 @implementation AppDelegate
 
@@ -14,6 +15,61 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    // 追記
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    viewController_ = [[UIViewController alloc] init];
+	viewController_.view.frame = CGRectMake(0, 0, 320, 480);
+	viewController_.view.backgroundColor = [UIColor grayColor];
+    [_window addSubview:viewController_.view];
+	[viewController_ viewWillAppear:YES];
+    [_window makeKeyAndVisible];
+    
+    //[Foursquare2 removeAccessToken];
+    if ([Foursquare2 isNeedToAuthorize]) {
+        NSLog(@"Hello1");
+        [self authorizeWithController:viewController_ callback:^(BOOL success, id result) {
+            if (success) {
+                [Foursquare2 getDetailForUser:@"self"
+                                     callback:^(BOOL success, id result) {
+                                         if (success) {
+                                             [self testMethod];
+                                         } else {
+                                             NSLog(@":(");
+                                         }
+                                     }];
+            }
+        }];
+    } else {
+        NSLog(@"Hello2");
+        [Foursquare2 getDetailForUser:@"self"
+                             callback:^(BOOL success, id result) {
+                                 if (success) {
+                                     [self testMethod];
+                                 } else {
+                                     NSLog(@":(");
+                                 }
+                             }];
+        
+        //		Example check-in 
+        //		[Foursquare2  createCheckinAtVenue:@"6522771"
+        //									 venue:nil
+        //									 shout:@"Testing"
+        //								 broadcast:broadcastPublic
+        //								  latitude:nil
+        //								 longitude:nil
+        //								accuracyLL:nil
+        //								  altitude:nil
+        //							   accuracyAlt:nil
+        //								  callback:^(BOOL success, id result){
+        //								if (success) {
+        //									NSLog(@"%@",result);
+        //								}
+        //							}];
+        
+    }
+     
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -56,5 +112,45 @@
      See also applicationDidEnterBackground:.
      */
 }
+
+Foursquare2Callback authorizeCallbackDelegate;
+- (void)authorizeWithController:(UIViewController*)controller
+                       callback:(Foursquare2Callback)callback
+{
+    authorizeCallbackDelegate = [callback copy];
+    NSString* url = [NSString stringWithFormat:@"https://foursquare.com/oauth2/authenticate?display=touch&client_id=%@&response_type=code&redirect_uri=%@", OAUTH_KEY,REDIRECT_URL];
+    
+    NSLog(@"!!!!!!!!!! %@", url);
+    
+    FoursquareWebLogin* loginController = [[FoursquareWebLogin alloc] initWithUrl:url];
+    loginController.delegate = self;
+    loginController.selector = @selector(setCode:);
+    UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:loginController];
+    
+    [controller presentModalViewController:navigationController animated:YES];
+    //[navigationController release];
+    //[loginController release];
+}
+
+- (void)setCode:(NSString*)code
+{
+    [Foursquare2 getAccessTokenForCode:code callback:^(BOOL success, id result) {
+        if (success) {
+            
+            NSLog(@"!!!!! %@ !!!!!", result);
+            
+            [Foursquare2 setBaseURL:[NSURL URLWithString:@"https://api.foursquare.com/v2/"]];
+            [Foursquare2 setAccessToken:[result objectForKey:@"access_token"]];
+            authorizeCallbackDelegate(YES, result);
+            //[authorizeCallbackDelegate release];
+        }
+    }];
+}
+
+- (void)testMethod
+{
+    NSLog(@"test mogemoge");
+}
+
 
 @end

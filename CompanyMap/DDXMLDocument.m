@@ -17,10 +17,13 @@
 	// If a wrapper object already exists, the _private variable is pointing to it.
 	
 	xmlDocPtr doc = (xmlDocPtr)kindPtr;
-	if(doc->_private == NULL)
-		return [[[DDXMLDocument alloc] initWithCheckedPrimitive:kindPtr] autorelease];
-	else
-		return [[((DDXMLDocument *)(doc->_private)) retain] autorelease];
+	if(doc->_private == NULL) {
+		//return [[[DDXMLDocument alloc] initWithCheckedPrimitive:kindPtr] autorelease];
+        return [[DDXMLDocument alloc] initWithCheckedPrimitive:kindPtr];
+	} else {
+		//return [[((DDXMLDocument *)(doc->_private)) retain] autorelease];
+		return ((__bridge DDXMLDocument *)(doc->_private));
+    }
 }
 
 /**
@@ -58,7 +61,7 @@
 	{
 		if(error) *error = [NSError errorWithDomain:@"DDXMLErrorDomain" code:0 userInfo:nil];
 		
-		[self release];
+		//[self release];
 		return nil;
 	}
 	
@@ -75,7 +78,7 @@
 	{
 		if(error) *error = [NSError errorWithDomain:@"DDXMLErrorDomain" code:1 userInfo:nil];
 		
-		[self release];
+		//[self release];
 		return nil;
 	}
 	

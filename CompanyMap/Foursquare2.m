@@ -215,7 +215,7 @@ NSString* kFSAccessToken                = @"access_token";
     
     NSMutableDictionary* params = [NSMutableDictionary dictionary];
     if (sort) {
-        [params setObject:sort forKey:@"sort"];
+        [params setObject:[self sortTypeToString:sort] forKey:@"sort"];
     }
     if (latitude && longitude) {
         [params setObject:[NSString stringWithFormat:@"%@,%@", latitude, longitude] forKey:@"ll"];
@@ -296,7 +296,7 @@ NSString* kFSAccessToken                = @"access_token";
                    phone:(NSString *)phone
                 latitude:(NSString *)latitude
                longitude:(NSString *)longitude
-       primaryCategoryId:(NSString *)prmaryCategoryId
+       primaryCategoryId:(NSString *)primaryCategoryId
                 callback:(Foursquare2Callback)callback
 {
     NSMutableDictionary* params = [NSMutableDictionary dictionary];
@@ -807,7 +807,7 @@ NSString* kFSAccessToken                = @"access_token";
 {
     Foursquare2Callback callback = (Foursquare2Callback)object;
     callback(NO, error);
-    [callback release];
+    //[callback release];
 }
 
 + (void)restConnection:(NSURLConnection*)connection
@@ -817,7 +817,7 @@ NSString* kFSAccessToken                = @"access_token";
 {
     Foursquare2Callback callback = (Foursquare2Callback)object;
     callback(NO, error);
-    [callback release];
+    //[callback release];
 }
 
 + (void)restConnection:(NSURLConnection*)connection
@@ -827,7 +827,7 @@ NSString* kFSAccessToken                = @"access_token";
 {
     Foursquare2Callback callback = (Foursquare2Callback)object;
     callback(NO, error);
-    [callback release];
+    //[callback release];
 }
 
 + (void)restConnection:(NSURLConnection*)connection
@@ -836,7 +836,7 @@ NSString* kFSAccessToken                = @"access_token";
 {
     Foursquare2Callback callback = (Foursquare2Callback)object;
     callback(YES, resource);
-    [callback release];
+    //[callback release];
 }
 
 #pragma mark Private methods
@@ -957,7 +957,7 @@ NSString* kFSAccessToken                = @"access_token";
 {
     callback = [callback copy];
     NSMutableDictionary* options = [NSMutableDictionary dictionary];
-    NSString* path = [NSString stringWithFormat:@"/%@", methodName]
+    NSString* path = [NSString stringWithFormat:@"/%@", methodName];
     [options setValue:[NSNumber numberWithInt:33] forKey:kHRClassAttributesFormatKey];
     NSDictionary* finalParams = [self generateFinalParamsFor:params];
     

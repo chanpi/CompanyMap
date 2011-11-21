@@ -10,6 +10,14 @@
 
 @implementation SearchViewController
 
+@synthesize freeSearchButton = freeSearchButton_;
+@synthesize areaButton = areaButton_;
+@synthesize headCountButton = headCountButton_;
+@synthesize categoryButton = categoryButton_;
+@synthesize visitDayButton = visitDayButton_;
+@synthesize visitPurposeButton = visitPurposeButton_;
+@synthesize limitedSearchButton = limitedSearchButton_;
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -76,5 +84,35 @@
         return YES;
     }
 }
+
+- (IBAction)freeSearchButtonTouched:(id)sender
+{
+}
+
+- (IBAction)areaButtonTouched:(id)sender
+{
+    
+}
+
+- (IBAction)headCountButtonTouched:(id)sender
+{
+}
+
+- (IBAction)categoryButtonTouched:(id)sender
+{
+}
+
+- (IBAction)visitDayButtonTouched:(id)sender
+{
+}
+
+- (IBAction)visitPurposeButtonTouched:(id)sender
+{
+}
+
+- (IBAction)limitedSearchButtonTouched:(id)sender
+{
+}
+
 
 @end
