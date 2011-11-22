@@ -38,6 +38,8 @@
                                              NSLog(@":(");
                                          }
                                      }];
+            } else {
+                NSLog(@":/");
             }
         }];
     } else {
@@ -120,9 +122,8 @@ Foursquare2Callback authorizeCallbackDelegate;
     authorizeCallbackDelegate = [callback copy];
     NSString* url = [NSString stringWithFormat:@"https://foursquare.com/oauth2/authenticate?display=touch&client_id=%@&response_type=code&redirect_uri=%@", OAUTH_KEY,REDIRECT_URL];
     
-    NSLog(@"!!!!!!!!!! %@", url);
-    
     FoursquareWebLogin* loginController = [[FoursquareWebLogin alloc] initWithUrl:url];
+    loginController.title = @"Login";
     loginController.delegate = self;
     loginController.selector = @selector(setCode:);
     UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:loginController];
@@ -143,6 +144,8 @@ Foursquare2Callback authorizeCallbackDelegate;
             [Foursquare2 setAccessToken:[result objectForKey:@"access_token"]];
             authorizeCallbackDelegate(YES, result);
             //[authorizeCallbackDelegate release];
+        } else {
+            NSLog(@">>>> %@ <<<<", result);
         }
     }];
 }

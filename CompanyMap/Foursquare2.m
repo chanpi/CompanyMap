@@ -53,7 +53,7 @@ NSString* kFSAccessToken                = @"access_token";
 + (void)initialize
 {
     [self setFormat:HRDataFormatJSON];
-    [self setDelegate:self];
+    [self setDelegate:(NSObject*)self];
     [self setBaseURL:[NSURL URLWithString:@"https://api.foursquare.com/v2/"]];
     NSUserDefaults* userDefault = [NSUserDefaults standardUserDefaults];
     if ([userDefault objectForKey:kFSAccessToken] != nil) {
@@ -65,11 +65,19 @@ NSString* kFSAccessToken                = @"access_token";
 {
     [self setBaseURL:[NSURL URLWithString:@"https://foursquare.com"]];
     NSMutableDictionary* params = [NSMutableDictionary dictionary];
+
+    // TODO: 以下追加
+    [params setObject:OAUTH_KEY forKey:@"client_id"];
+    [params setObject:OAUTH_SECRET forKey:@"client_secret"];
+    //[params setObject:@"token" forKey:@"response_type"];
+    
     [params setObject:code forKey:@"code"];
     [params setObject:@"authorization_code" forKey:@"grant_type"];
     [params setObject:REDIRECT_URL forKey:@"redirect_uri"];
     [self get:@"oauth2/access_token" withParams:params callback:callback];
 }
+
+
 
 + (void)setAccessToken:(NSString *)token
 {
@@ -938,6 +946,8 @@ NSString* kFSAccessToken                = @"access_token";
     NSDictionary* finalParams = [self generateFinalParamsFor:params];
     
     [options setObject:finalParams forKey:kHRClassAttributesParamsKey];
+    
+    NSLog(@"!!! options[@request] %@", options);
     
     if ([httpMethod isEqualToString:@"GET"]) {
         [self getPath:path withOptions:options object:callback];

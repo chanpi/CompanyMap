@@ -14,7 +14,7 @@
 #import "NSDictionary+ParamUtils.h"
 #import "HRBase64.h"
 #import "HROperationQueue.h"
-//#import "PhotoFormatter.h"
+#import "PhotoFormatter.h"
 
 NSString* kHRIsExecuting    = @"isExecuting";
 NSString* kHRIsFinished     = @"isFinished";
@@ -61,10 +61,10 @@ NSString* kHRIsCancelled    = @"isCancelled";
         isCancelled_    = NO;
         requestMethod_  = method;
         path_           = [urlPath copy];
-        options_        = options_;//[options_ retain];
-        object_         = object_;//[object_ retain];
+        options_        = options;//[options retain];
+        object_         = object;//[object retain];
         timeout_        = 30.0f;
-        delegate_       = [[options_ valueForKey:kHRClassAttributesDelegateKey] nonretainedObjectValue];
+        delegate_       = [[options valueForKey:kHRClassAttributesDelegateKey] nonretainedObjectValue];
         formatter_      = [self formatterFromFormat];//[[self formatterFromFormat] retain];
     }
     return self;

@@ -7,6 +7,9 @@
 //
 
 #import "FoursquareWebLogin.h"
+#import "Foursquare2.h"
+#import "AppDelegate.h"
+//#import <objc/message.h>
 
 @interface FoursquareWebLogin (PrivateMethods)
 - (void)cancel;
@@ -67,20 +70,54 @@
             }
         }
         NSArray* array = [url componentsSeparatedByString:@"="];
-        [delegate_ performSelector:selector_ withObject:[array objectAtIndex:1]]; // AppDelegateで設定
+        NSLog(@"delegate:%@\narray:%@", delegate_, array);
+        [self.delegate performSelector:@selector(setCode:) withObject:[array objectAtIndex:1]]; // AppDelegateで設定
+        //[delegate_ performSelector:selector_ withObject:[array objectAtIndex:1]]; // AppDelegateで設定
+        //objc_msgSend(delegate_, selector_, [array objectAtIndex:1]);
         [self cancel];
+        
+        if ([url hasPrefix:REDIRECT_URL]) {
+            return NO;
+        }
         
     } else if ([url rangeOfString:@"error="].length != 0) {
         NSArray* array = [url componentsSeparatedByString:@"="];
-        [delegate_ performSelector:selector_ withObject:[array objectAtIndex:1]]; // AppDelegateで設定
+        [self.delegate performSelector:@selector(setCode:) withObject:[array objectAtIndex:1]]; // AppDelegateで設定
+        //[delegate_ performSelector:selector_ withObject:[array objectAtIndex:1]]; // AppDelegateで設定
+        //objc_msgSend(delegate_, selector_, [array objectAtIndex:1]);
         NSLog(@"Foursquare: %@", [array objectAtIndex:1]);
         
+    }
+    
+    // 追記
+    if ([url rangeOfString:@"access_token="].length != 0) {
+        NSLog(@"!!!!!");
     }
     return YES;
 }
 
-- (void)webViewDidStartLoad:(UIWebView *)webView {}
-- (void)webViewDidFinishLoad:(UIWebView *)webView {}
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    /*
+     NSString* url = [[webView_.request URL] absoluteString];
+     //NSLog(@"koko--> %@", url);
+     if ([url isEqualToString:REDIRECT_URL]) {
+        NSLog(@"\nsame!\n");
+     }
+    if ([url rangeOfString:@"access_token="].location != NSNotFound) {
+        NSString* accessToken = [[url componentsSeparatedByString:@"="] lastObject];
+        NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:accessToken forKey:@"access_token"];
+        [defaults synchronize];
+        [self dismissModalViewControllerAnimated:YES];
+        
+        NSLog(@"--- get access token ---");
+    }
+     */
+}
+
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {}
 
 // ----------- UIWebViewDelegate ここまで -----------
